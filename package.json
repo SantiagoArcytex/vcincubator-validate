@@ -1,6 +1,6 @@
 {
   "name": "@vcincubator/validate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Validate VCI Marketplace license codes from your app. Tiny, zero-dependency wrapper around the VCI validation API with retries, caching, and TypeScript types.",
   "type": "module",
   "main": "./dist/index.js",
