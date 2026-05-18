@@ -45,6 +45,13 @@
   ],
   "author": "VCI Marketplace",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiagoArcytex/vcincubator-validate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SantiagoArcytex/vcincubator-validate/issues"
+  },
   "homepage": "https://marketplace.vcinc.ai",
   "devDependencies": {
     "typescript": "^5.4.0",
