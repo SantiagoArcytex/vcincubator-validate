@@ -51,6 +51,6 @@ jobs:
 
       - name: Publish
         # Trusted publishing authenticates via OIDC — no token needed.
-        # npm publish runs prepublishOnly first (build + 44 tests); a failure aborts the publish.
+        # npm publish runs prepublishOnly first (build + tests); a failure aborts the publish.
         # Provenance attestation is attached automatically when publishing via a trusted publisher.
         run: npm publish --access public

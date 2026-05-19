@@ -3,3 +3,7 @@ dist/
 *.log
 .DS_Store
 .claude/settings.local.json
+
+# Internal maintainer/ops docs — kept locally, not published to this client-facing repo
+docs/PUBLISHING.md
+docs/SECURITY-AUDIT.md

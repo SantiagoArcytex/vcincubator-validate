@@ -1,6 +1,6 @@
 {
   "name": "@vcincubator/validate",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Validate VCI Marketplace license codes from your app. Tiny, zero-dependency wrapper around the VCI validation API with retries, caching, and TypeScript types.",
   "type": "module",
   "main": "./dist/index.js",
@@ -54,6 +54,7 @@
   },
   "homepage": "https://marketplace.vcinc.ai",
   "devDependencies": {
+    "@types/node": "^22.19.19",
     "typescript": "^5.4.0",
     "vitest": "^1.6.0"
   }

@@ -64,6 +64,13 @@ export class TtlCache<V> {
     this.map.delete(key);
   }
 
+  /** Delete every entry whose key satisfies `predicate`. */
+  deleteMatching(predicate: (key: string) => boolean): void {
+    for (const key of this.map.keys()) {
+      if (predicate(key)) this.map.delete(key);
+    }
+  }
+
   clear(): void {
     this.map.clear();
   }

@@ -129,12 +129,16 @@ import type {
 
 ## Documentation
 
-This repo also ships the full VCI seller-facing docs:
+- [`docs/integration.md`](docs/integration.md) — integration guide: endpoints, auth, webhooks, code snippets
+- [`docs/sop/`](docs/sop/) — step-by-step seller setup guides
+- [`SECURITY.md`](SECURITY.md) — vulnerability disclosure policy
+- [`skill/`](skill/) — the Claude Code integration skill (`npx vci-validate init`)
 
-- [`docs/integration.md`](docs/integration.md) — developer integration guide (endpoints, auth, webhooks, snippets)
-- [`docs/sop/`](docs/sop/) — step-by-step seller SOPs, from prerequisites through validation and dashboard
-- [`docs/PUBLISHING.md`](docs/PUBLISHING.md) — maintainer runbook for cutting npm releases
-- [`skill/`](skill/) — the Claude Code integration skill bundled with the package (`npx vci-validate init`)
+## Security
+
+The SDK is **server-only** — never expose a `vci_live_` key or per-code secret
+to a browser. Cached results are isolated per API key. Report vulnerabilities
+privately per [`SECURITY.md`](SECURITY.md).
 
 ## License
 
