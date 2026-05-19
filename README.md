@@ -140,6 +140,14 @@ The SDK is **server-only** — never expose a `vci_live_` key or per-code secret
 to a browser. Cached results are isolated per API key. Report vulnerabilities
 privately per [`SECURITY.md`](SECURITY.md).
 
+## Network access
+
+This SDK makes exactly one kind of network request: a `POST` to
+`{baseUrl}/api/validation/verify`, where `baseUrl` is the URL you pass to
+`createClient()`. It contacts no other hosts and sends no telemetry or
+analytics. With zero runtime dependencies, that single call in
+`src/client.ts` is the package's entire network surface.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
